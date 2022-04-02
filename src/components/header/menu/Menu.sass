@@ -1,0 +1,15 @@
+nav // обертка для пунктов меню в шапке 
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    #menu-list // ul 
+        padding: 0px
+        list-style: none
+        display: flex
+        margin: 0px
+        li
+            margin-left: 10px
+            .active-link // этот класс включается, когда срабатывает react-scroll. Он придает баттону цвет активной ссылки, если экран прокручен до определенной секции.
+                .button
+                    background-color: #FFE302

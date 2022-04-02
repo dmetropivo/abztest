@@ -1,0 +1,78 @@
+.form-register // форма регистрации 
+    margin-left: auto
+    margin-right: auto
+    .input-field //стили инпутов в форме
+        font-size: 16px
+        line-height: 26px
+        width: 100%
+        height: 54px
+        padding-left: 16px
+        border: 1px solid #D0CFCF
+        border-radius: 4px
+        background-color: #f8f8f8
+        font-family: 'Nunito-Regular'
+    .input-title // стиль надписи, которая появляется в верхнем левом углу инпута при фокусе
+        font-size: 12px
+        position: relative
+        border-radius: 25%
+        top: 10px
+        left: 16px
+        padding-left: 4px
+        padding-right: 4px
+        background-color: #f8f8f8
+    .input-title-hidden
+        height: 24px
+    .input-field-email
+        margin: 26px 0px 26px 0px
+    .select-position // блок с радиобаттонами 
+        margin: 43px 0px 41px 0px
+        p
+            line-height: 26px
+            font-size: 16px
+            margin-bottom: 9px
+        label
+            font-size: 16px
+            line-height: 26px
+            margin-bottom: 7px
+            font-family: 'Nunito-Regular'
+    
+    .input-photo-wrap //обертка поля с выбором фотографии(компонента FileUploader)
+        margin-bottom: 50px
+        label
+            width: 100%
+    
+    .error-input-message // стиль сообщения об ошибке, которая появляется под инпутом
+        position: absolute 
+        color:#CB3D40
+        font-size: 12px
+        line-height: 14px
+        padding: 4px 0px 0px 16px
+    
+    .button-container // центрируем кнопку отправки формы с помощью контейнера
+        text-align: center
+        padding-bottom: 100px
+
+#radio-button
+    width: 20px
+    height: 20px
+    margin-right: 12px
+    background-position: center
+    background-size: auto
+    background-color: #ffffff
+    border: 1px solid #D0CFCF
+    cursor: pointer
+    
+#radio-button:checked[type=radio]
+    background-image: url("../../../assets/radiobutton.svg")
+    border: 1px solid #00BDD3
+fieldset.error-style
+    color: #CB3D40
+    #name.input-field, #email.input-field, #phone.input-field
+        border: 2px solid #CB3D40
+
+@media screen and (min-width: 0px)
+    .form-register
+        width: 328px
+@media screen and (min-width: 768px)
+    .form-register
+        width: 380px

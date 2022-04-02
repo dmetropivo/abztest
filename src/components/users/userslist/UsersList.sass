@@ -1,0 +1,29 @@
+.cards-container //контейнер для карточек юзера
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .wrap-user-card // обертка одной карточки юзера
+        background-color: #FFFFFF
+        border-radius: 10px
+
+@media screen and (min-width: 0px)
+    .cards-container
+        margin-bottom: 30px
+    .wrap-user-card
+        width: 328px
+        margin-bottom: 20px
+@media screen and (min-width: 768px)
+    .cards-container
+        margin-bottom: 34px
+    .wrap-user-card
+        width: 344px
+        margin-bottom: 16px
+@media screen and (min-width: 1024px)
+    .cards-container
+        margin-bottom: 21px
+    .wrap-user-card
+        width: 282px
+        margin-bottom: 29px
+@media screen and (min-width: 1170px)
+    .wrap-user-card
+        width: 370px

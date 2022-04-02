@@ -1,0 +1,45 @@
+.default-input-file //Полностью скрываем браузерный инпут. Ставим ширину и высоту по 0.1 рх, чтобы он не исчезал из DOM-a
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+
+.custom-input-file // Кастомный инпут, который отображается пользователю
+    cursor: pointer
+    display: flex
+    align-items: center
+    height: 54px
+    width: 100%
+    border: 1px solid #D0CFCF
+    border-left-color: rgba(0, 0, 0, 0.87)
+    border-radius: 4px
+    .upload-button // кнопка upload в левой части инпута 
+        height: 54px
+        width: 83px
+        border: 1px solid rgba(0, 0, 0, 0.87)
+        border-left-width: 0px
+        border-radius: 4px 0px 0px 4px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-family: 'Nunito-Regular'
+    .button-uploader-error // error стиль, который отображается при ошибке  
+        border: 2px solid #CB3D40
+        border-left-width: 0px
+    .uploaded-file //Секция, где отображается имя выбраного пользователем файла
+        margin-left: 16px
+        color: #7E7E7E
+        text-overflow: ellipsis
+        overflow: hidden
+        max-width: 215px
+        font-family: 'Nunito-Regular'
+    .active
+        color: #000000
+        
+
+.error-uploader-style // error стиль, который отображается при ошибке  
+    border: 2px solid #CB3D40
+
+

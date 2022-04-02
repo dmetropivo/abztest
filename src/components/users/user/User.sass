@@ -1,0 +1,53 @@
+.user-card // карточка юзера
+    display: flex
+    flex-direction: column
+    height: 254px
+    text-align: center
+    padding: 20px
+    img // стандартное фото юзера (если нет фото пришедшего с сервера)
+        border-radius: 50% 
+        margin-left: auto
+        margin-right: auto
+        background-image: url('../../../assets/photo-cover.svg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+
+    .user-card-name // блок с именем юзера
+        text-overflow: ellipsis
+        overflow: hidden
+        margin: 20px 0px 20px 0px
+        cursor: pointer
+    .info-block // обертка, которая содержит позицию, емейл и номер телефона юзера
+        display: flex
+        flex-direction: column
+        .info-position
+            text-overflow: ellipsis
+            overflow: hidden
+        .info-email
+            text-overflow: ellipsis
+            overflow: hidden
+            cursor: pointer
+        .info-phone
+            text-overflow: ellipsis
+            overflow: hidden
+
+.user-tooltip // Стили подсказки, которая всплывает при наведении курсора на имя или емейл
+    display: flex !important
+    padding: 0px 16px 0px 16px !important
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    border: none
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+    font-size: 16px
+    line-height: 26px
+    color: #FFFFFF
+    background: rgba(0, 0, 0, 0.87)
+    height: 32px 
+    z-index: 2000
+
+.user-tooltip:before, .user-tooltip:after //убираем дкфолтную стрелочку на подсказке
+    display: none

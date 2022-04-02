@@ -1,0 +1,116 @@
+//Файл со стилями для общих компонентов / Style file for common components
+
+body
+  margin: 0
+  font-family: 'Nunito-Regular'
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  min-width: 360px
+  max-width: 2560px
+main
+  padding-top: 60px
+//Main container
+.main-container
+  max-width: 1170px
+  margin-left: auto
+  margin-right: auto
+
+// Custom padding between containers on the page
+.padding-container
+  padding: 140px 0px 140px 0px
+
+  // background color for container
+.main-bg-color
+  background-color: #F8F8F8
+
+// BUTTON STYLES
+.button
+ font-family: 'Nunito-Regular'
+ box-sizing: border-box
+ outline: none
+ border: none   
+ border-radius: 80px
+ width: 100px
+ height: 34px
+ line-height: 26px
+ font-size: 16px
+
+ font-weight: normal
+ text-decoration: none
+ color: #000000
+ background-color: #F4E041
+ cursor: pointer
+ user-select: none
+ appearance: none
+ touch-action: manipulation
+ transition: box-shadow .18s ease-out,background .18s ease-out,color .18s ease-out
+
+.button:focus-visible
+  box-shadow: 0 0 0 3px lightskyblue
+
+.button:hover
+  box-shadow: 0 1px 1px 0  #cfcfcf, 0 2px 5px 0  #cfcfcf
+  text-decoration: none
+  background-color: #FFE302
+  color: #000000
+
+
+.button:active
+  background-color: #FFE302 !important
+
+.button:disabled 
+  background-color: #B4B4B4
+  color: #FFFFFF
+  pointer-events: none
+
+
+// PRELOADER INDICATOR
+@keyframes donut-spin 
+  0% 
+    transform: rotate(10deg)
+  
+  100% 
+    transform: rotate(360deg)
+
+.donut 
+  display: inline-block
+  border: 6px solid rgb(0, 189, 211)
+  border-left-color: rgba(255, 255, 255, 0)
+  border-radius: 50%
+  width: 34px
+  height: 34px
+  animation: donut-spin 1.2s linear infinite
+.spinner
+  height: 34px
+
+
+  //Text styles for <h1> and <p>
+.h1-custom
+  font-family: 'Nunito-Regular'
+  font-size: 40px
+  line-height: 40px
+  font-weight: 400
+.p1-custom
+  font-family: 'Nunito-Regular'
+  font-size: 16px
+  line-height: 26px
+  font-weight: 400
+
+
+
+// CUSTOM CONTAINER ADAPTIVE-SIZE
+@media screen and (min-width: 0px)
+    .main-container
+        width: 328px
+@media screen and (min-width: 768px)
+    .main-container
+        width: 704px
+@media screen and (min-width: 1024px)
+    .main-container
+        width: 904px
+@media screen and (min-width: 1170px)
+    .main-container
+        width: 1170px
+
+//Import font Nunito-Regular
+@import '../src/fonts/Nunito/fonts'
